@@ -4,7 +4,7 @@ dirac.py - script trying to do anisotropic diffusion via a Dirac-like equation; 
 
 dirac_experiment.py - script testing isotropic Dirac-like equation with a solution depending on x and y.  Known problems indicated in comments at top of script.
 
-DeluzetNarski.py - script implementing simple cases (scalar, not spin-half) similar to content of "A two field interated asymptotic-preserving method for highly anisotropic elliptic equations by Deluzet and Narski.  Does straight and bent magnetic fieldlines and so can demonstrate null-space problem and "locking" problem.
+DeluzetNarski.py - script implementing simple cases (scalar, not spin-half) similar to content of "A two field interated asymptotic-preserving method for highly anisotropic elliptic equations" by Deluzet and Narski.  Does straight and bent magnetic fieldlines and so can demonstrate null-space problem and "locking" problem.
 
 unit_square.msh - crude triangle mesh of unit square.
 
