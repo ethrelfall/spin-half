@@ -28,7 +28,6 @@ uv = TrialFunction(V)
 u, v = split(uv)
 w1, w2 = TestFunctions(V)
 x,y = SpatialCoordinate(mesh)
-yFunc = Function(V)
 
 a = (grad(u)[0]*w1 + sqrt_eps*grad(v)[1]*w1 + sqrt_eps*grad(u)[1]*w2 - grad(v)[0]*w2)*dx
 L = -sqrt_eps*y*(w1+w2)*dx
