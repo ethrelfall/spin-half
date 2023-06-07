@@ -8,4 +8,4 @@ unit_square_test.msh - more refined triangle mesh of unit square.
 
 Note: there is no script testing bent magnetic fieldlines for spin-half yet, so cannot say anything re "locking" problem in the spin-half case.
 
-Note: all the spin-half material is provisional and might be misconceived or wrongly implemented.
+Note: all the spin-half material is provisional and might be misconceived and/or wrongly implemented.
