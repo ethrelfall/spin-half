@@ -2,7 +2,7 @@
 
 # What this does: is set up to run a spin-half equation on square giving same result as scalar problem similar to Deluzet-Narski.
 # Solution is u=v=(1/8-1/2*y^2) sin(m pi x).
-# Is not isotropic, rather is intended to test solutions to spin-half equation.
+# Is not isotropic (at least as supplied, with sqrt_eps=1), rather is intended to test solutions to spin-half equation.
 
 # Known problems
 # 1. Running on a mesh of regular squares or right triangles gives nonsense output (see square mesh below, and change identifiers in BCs).
@@ -32,7 +32,7 @@ w1, w2 = TestFunctions(V)
 x,y = SpatialCoordinate(mesh)
 
 a = (grad(u)[0]*w1 + sqrt_eps*grad(v)[1]*w1 + sqrt_eps*grad(u)[1]*w2 - grad(v)[0]*w2)*dx
-L = sqrt_eps*((m*pi*cos(m*pi*x)*(0.125-0.5*y*y)+sin(m*pi*x)*(-y))*w1+(-y*sin(m*pi*x)-m*pi*cos(m*pi*x)*(0.125-0.5*y*y))*w2)*dx
+L = ((m*pi*cos(m*pi*x)*(0.125-0.5*y*y)+sqrt_eps*sin(m*pi*x)*(-y))*w1+(sqrt_eps*(-y)*sin(m*pi*x)-m*pi*cos(m*pi*x)*(0.125-0.5*y*y))*w2)*dx
 
 g = Function(V)
 
