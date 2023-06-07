@@ -6,7 +6,7 @@
 
 # Known problems
 # 1. Running on a mesh of regular squares or right triangles gives nonsense output (see square mesh below, and change identifiers in BCs).
-# 2. Low-accuracy computations, e.g. orders 1-3 for unit_square.msh, gives obvious artifacts
+# 2. Low-accuracy computations, e.g. orders 1-3 for unit_square.msh, give obvious artifacts
 
 from firedrake import *
 
