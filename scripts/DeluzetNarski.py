@@ -35,7 +35,7 @@ bcT = DirichletBC(V, 0.0, 13)   # y = 1 homogeneous Dirichlet, 13 on unit_square
 
 solution = Function(V)
 solution.interpolate(0.125-0.5*y*y)
-bcLR = DirichletBC(V, solution, (1,2))  # optional Dirichlet BC for lam=0.0 case: removes null space problem
+bcLR = DirichletBC(V, solution, (1,2))  # optional additional Dirichlet BC for lam=0.0 case: removes null space problem
 
 # magnetic field lines direction unit vector
 bhat = as_vector([1/sqrt(1+lam*lam*x*x*y*y*(1-x)*(1-x)*(1-y)*(1-y)),lam*x*y*(1-x)*(1-y)/sqrt(1+lam*lam*x*x*y*y*(1-x)*(1-x)*(1-y)*(1-y))])
