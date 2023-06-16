@@ -2,7 +2,7 @@
 
 # What this does: is set up to run a spin-half equation on square giving same result as scalar problem similar to Deluzet-Narski.
 # Solution is u=v=(1/8-1/2*y^2) sin(m pi x).
-# Is not isotropic (at least as supplied, with sqrt_eps=1), rather is intended to test solutions to spin-half equation.
+# Is not anisotropic (at least as supplied, with sqrt_eps=1), rather is intended to test solutions to spin-half equation.
 
 # Known problems
 # 1. Running on a mesh of regular squares or right triangles gives nonsense output (see square mesh below, and change identifiers in BCs).
